@@ -11,7 +11,9 @@
     "build": "rm -rf dist && webpack",
     "watch": "WEBPACK_WATCH=true npm run build",
     "start": "electron .",
-    "pack": "NODE_ENV=production npm run build && node bin/pack.js"
+    "pack": "NODE_ENV=production npm run build && node bin/pack.js",
+    "packageMac": "electron-packager ./  Medis --platform=darwin --arch=x64 --out=./app  --overwrite",
+    "packageLinux": "electron-packager ./  Medis --platform=linux --arch=x64 --out=./app  --overwrite"
   },
   "repository": {
     "type": "git",
